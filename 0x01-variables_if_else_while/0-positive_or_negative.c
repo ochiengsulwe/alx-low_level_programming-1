@@ -19,5 +19,5 @@ printf("%d is zero\n", n);
 else
 printf("%d is negative\n", n);
 /*if the number is less than 0: is negative*/
-Return (0);
+return (0);
 }
