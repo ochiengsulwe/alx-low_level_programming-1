@@ -1,19 +1,24 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "./main.h"
-/* more headers goes there */
-
 /**
- * main - Program entry point
+ * main - prints to console
  *
- * Return: 0 on success. Error code otherwise
+ * Desription: prints _putchar string to the console
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\n'};
-	int length = sizeof(ch) / sizeof(char);
-	int i;
-	for (i = 0; i < length; i++)
-		_putchar(ch[i]);
+	char text[] = "_putchar";
+	int i = 0;
+
+	while (text[i] != 0)
+	{
+		_putchar(text[i]);
+		i++;
+	}
+	_putchar('\n');
+
 	return (0);
 }
