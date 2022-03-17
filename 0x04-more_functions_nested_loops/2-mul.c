@@ -3,8 +3,8 @@
 
 /**
  *  mul - a function that multiplies two integers
- * @a: a
- * @b: b
+ * @a: a - Variable
+ * @b: b - Variable
  * Return: multiplication result of the 2 inputs
  */
 int mul(int a, int b)
