@@ -1,39 +1,20 @@
 #include <stdio.h>
-
 /**
+ * main - Entry point
  *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
-
 {
+char Array[] = "_putchar\n";
+int al = 0;
 
-	char Array[] = "_putchar\n";
+while (al < 9)
+{
+_putchar(Array[al]);
+al++;
+}
 
-	int al = 0;
-
-
-
-	while (al < 9)
-
-	{
-
-		_putchar(Array[al]);
-
-		al++;
-
-	}
-
-
-
-	return (0);
-
-
+return (0);
 
 }
