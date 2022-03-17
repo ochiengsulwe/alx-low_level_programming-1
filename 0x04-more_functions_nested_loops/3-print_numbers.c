@@ -5,8 +5,8 @@
  *
  * Return: 0-9 followed by newline
  */
-
-void print_numbers(void);
+int main(void)
+void print_numbers(void)
 {
 	int i;
 
