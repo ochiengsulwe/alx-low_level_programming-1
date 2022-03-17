@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints the numbers from 1 to 100, followed by a new line
@@ -10,25 +10,27 @@
 int main(void)
 {
 	int i;
+
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 != 0)
 		{
-			_putchar(" Fizz");
+			printf(" Fizz");
 		} else if (i % 5 == 0 && i % 3 != 0)
 		{
-			_putchar(" Buzz");
+			printf(" Buzz");
 		} else if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar(" FizzBuzz");
+			printf(" FizzBuzz");
 		} else if (i == 1)
 		{
-			_putchar("%d", i);
+			printf("%d", i);
 		} else
 		{
-			_putchar(" %d", i);
+			printf(" %d", i);
 		}
 	}
-	_putchar("\n");
+	printf("\n");
+
 	return (0);
 }
