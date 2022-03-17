@@ -1,39 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
-
-int main(void)
-
+ * _isupper - a function that checks for uppercase characters
+ * @c: input
+ * Return: 1 if c is uppercase, 0 otherwise
+ */
+int _isupper(int c)
 {
-
-	char Array[] = "_putchar\n";
-
-	int al = 0;
-
-
-
-	while (al < 9)
-
-	{
-
-		_putchar(Array[al]);
-
-		al++;
-
-	}
-
-
-
-	return (0);
-
-
-
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
