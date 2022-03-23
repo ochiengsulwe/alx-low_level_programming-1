@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-#include " main.h"
-
-/**
- * mul -  checks for checks for a digit (0 through 9).
- * @a: a -  Variable
- * @b: b - variable
- * Return: Always 0
- */
-int mul(int a, int b)
-{
-	int mul;
-
-	mul = a * b;
-
-	return (mul);
-}
-=======
 #include "main.h"
 /**
  * mul -  checks for checks for a digit (0 through 9).
@@ -26,7 +8,8 @@ int mul(int a, int b)
 int mul(int a, int b)
 {
 	int mul;
+
 	mul = a * b;
+
 	return (mul);
 }
->>>>>>> 78d4c64f7683cf1a155041f7da17e7a4fa0c8e69
