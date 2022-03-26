@@ -1,36 +1,27 @@
 #include "main.h"
 
 /**
- * cap_string - function that capitalizes all words of a string.
- * @s: Pointer to Char
- * Return: char.
+ * leet - Encodes a string to 1337.
+ * @str: The string to be encoded.
+ *
+ * Return: A pointer to the encoded string.
  */
-
-char *cap_string(char *s)
+char *leet(char *str)
 {
-	int i = 0;
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	while (*(s + i) != '\0')
+	while (str[indx1])
 	{
-		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			*(s + i) = *(s + i) - ' ';
-			i++;
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
 		}
-		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-		    || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-		    || *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-		    || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-		    || *(s + i) == '.')
-		{
-			i++;
-			if (*(s + i) >= 97 && *(s + i) <= 122)
-			{
-				*(s + i) = *(s + i) - ' ';
-			}
-		}
-		else
-			i++;
+
+		indx1++;
 	}
-	return (s);
+
+	return (str);
 }
