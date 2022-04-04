@@ -1,17 +1,19 @@
 #include <stdio.h>
 
 /**
-*main -prints the name of the program
-*
-*
-* @argc: argument count
-* @argv: argument vector
-* Return: int
-*/
-
+ * main - prints the name of the program
+ * Description - a program that prints its name followed by a new line
+ * @argc: agument used
+ * @argv: argument used
+ * Return: int
+ */
 int main(int argc, char *argv[])
 {
-  (void)argc;
-  printf(("%s\n", argv[0]);
-  return (0);
-}        
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+	printf("%s\n", argv[i]);
+	}
+	return (0);
+}
