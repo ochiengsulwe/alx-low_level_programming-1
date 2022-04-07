@@ -9,6 +9,7 @@
  * @argv: argument vector
  * Return: int
  */
+
 int main(int argc, char *argv[])
 {
 	int m1, m2;
@@ -17,6 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	m1 = atoi(argv[1]);
 	m2 = atoi(argv[2]);
 	printf("%d\n", m1 * m2);
